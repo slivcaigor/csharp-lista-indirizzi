@@ -25,12 +25,10 @@
 
                     // Per ogni riga, divide la stringa in base alla virgola
                     var values = line.Split(',');
-
-                    if(values.Length < 6) {
+                    if (values.Length < 6)
+                    {
                         continue;
                     }
-
-
                     string name = values[0];
                     string surname = values[1];
                     string street = values[2];
