@@ -26,6 +26,37 @@ namespace csharp_lista_indirizzi
             City = city;
             Province = province;
             ZIP = zip;
+
+            // Eccezioni
+            //if (string.IsNullOrEmpty(name))
+            //{
+            //    throw new ArgumentException("Il nome non può essere vuoto");
+            //}
+            //if (string.IsNullOrEmpty(surname))
+            //{
+            //    throw new ArgumentException("Il cognome non può essere vuoto");
+            //}
+            //if (string.IsNullOrEmpty(street))
+            //{
+            //    throw new ArgumentException("La via non può essere vuota");
+            //}
+            //if (string.IsNullOrEmpty(city))
+            //{
+            //    throw new ArgumentException("La città non può essere vuota");
+            //}
+            //if (string.IsNullOrEmpty(province))
+            //{
+            //    throw new ArgumentException("La provincia non può essere vuota");
+            //}
+            //if (string.IsNullOrEmpty(zip))
+            //{
+            //    throw new ArgumentException("Il CAP non può essere vuoto");
+            //}
+        }
+
+        public override string ToString()
+        {  // Override del metodo ToString() per restituire una rappresentazione stringa dell'oggetto
+            return Name + " " + Surname + ", " + Street + ", " + City + " (" + Province + ") " + ZIP;
         }
     }
 }
